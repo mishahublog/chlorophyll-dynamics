@@ -5,6 +5,7 @@ chl<-stack("chlorophyll.nc")
 a=c(77,78,7,8)
 acrop<-crop(chl,a)
 #converting it to points
+#for new commiting 
 abox<-rasterToPoints(acrop)
 #eliminating first and second coloum(lat$long)
 a_el<-abox[,c(-1,-2)]
